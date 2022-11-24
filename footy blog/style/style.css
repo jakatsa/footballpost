@@ -1,0 +1,346 @@
+*{
+  list-style: none;
+
+}
+
+
+h1,
+h2,
+h3{
+  font-weight: 400;
+  color: #143774;
+  margin-top: 0;
+}
+
+h1{
+  color: white;
+  font-size: 2rem;
+}
+h2::after{
+  content: "🚓";
+}
+h2{
+font-size: 1.5rem;
+}
+body{
+  font-size: 1rem;
+  margin: 0;
+}
+header{
+ margin-bottom: 3rem;
+
+}
+a{
+  color: white;
+}
+footer{
+  background-color: blueviolet;
+  text-align: center;
+  padding: 3em 0;
+}
+img{
+  width: 100%;
+}
+footer{
+  color: azure;
+  background-color: black;
+  margin-top: 3rem;
+}
+/*typography*/
+.container-nav{
+  background-color: black;
+  color:white;
+  
+}
+
+.con{
+  color: white;
+}
+.article-featured{
+  border-bottom: #707070 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 3rem;
+}
+.article-recent{
+display: flex;
+flex-direction: column;
+border-bottom: #707070 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 3rem;
+}
+.article-recent-main{
+order: 2;
+}
+.article-recent-sec{
+order:1 ;
+}
+    video {
+      width: 100%;
+      height: 40%;
+    }
+/*full screen layout*/
+.container-nav-1 {
+
+  min-width: 100%;
+  display: flex;
+  background-color:0,0,0,.5;
+  align-items: center;
+}
+
+@media (min-width:670px) {
+  .clip {
+    width: 100%;
+    height: 40%;
+  }
+.con-1 {
+    color:red;
+  }
+.container-nav{
+
+  min-width: 100%;
+  display: flex;
+  background-color:black;
+  align-items: center;
+}
+.container-nav-2 {
+color: white;
+  min-width: 100%;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+/*navigation*/
+nav ul{
+  list-style: none;
+  justify-content: center;
+
+}
+nav li{
+
+  display:inline;
+}
+li{
+ 
+  margin: 0 1em;
+}
+.container-2{
+margin: 0 auto;
+  max-width: 980px;
+  display: flex;
+}
+main {
+  max-width: 70%;
+  background-color:white;
+padding: 10px;
+
+  border: 10px grey solid;
+  margin: 5px;
+}
+
+aside {
+  max-width: 30%;
+ 
+}
+/*articles*/
+.article-img{
+ /* max-height: 300px;*/
+  margin: auto;
+  width: 100%;
+
+  object-fit: cover;
+ 
+  
+}
+
+.article-featured{
+  display: flex;
+  flex-direction: column;
+}
+.article-title{
+  font: 1.5rem;
+  order: 99 ;
+}
+.article-body{
+  order: 99 ;
+}
+.read-more .article-info{
+  font-size: .875rem;
+
+}
+.article-info{
+  margin: 2em 0;
+}
+/*side-bar*/
+.sidebar-img{
+  max-width: 100%;
+
+  object-fit: cover;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.sidebar-1{
+  padding: 1em;
+  background-color: white;
+  border: 10px grey solid;
+  margin: 5px;
+}
+
+.sidebar-title{
+  
+  font-weight: 700;
+}
+.sidebar-title .sidebar-title-recent{
+  font-size: 1rem;
+}
+.sidebar-recent-post{
+display: flex;
+flex-direction: column;
+}
+
+.sidebar-img{
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  order: -1;
+}
+.sidebar-recent-post{
+  padding: 10px;
+  border-bottom: 3px grey solid;
+  margin-bottom: 1em;
+}
+.sidebar-recent-post:last-child{
+  border: 0;
+  margin: 0;
+}
+/*forms*/
+.container-f{
+  position: relative;
+  flex-direction: column;
+  display: flex;
+width: 40%;
+margin: 2rem auto;
+
+padding: 10px;
+height: 500px;
+background:rgba(0,0,0,0.8) ;
+
+}
+
+
+.sign{
+  
+  width: 50%;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+
+.space  {
+margin:  10px 0;
+}
+label{
+  display: block;
+  font-size: 1.5em;
+}
+input{
+  width: 100%;
+  HEIGHT: 40%;
+  margin: 1rem 0;
+  padding: .5rem;
+  font-size: 1.3em;
+  background-color: rgb(0,0,0,.5);
+  border-radius: 5px;
+  color: white;
+
+}
+button{
+  background-color:blue;
+  color: white;
+  width: 100%;
+ 
+  padding: .5rem;
+  font-size: 1em;
+  font-weight: 400;
+margin: 2rem 0;
+}
+button:hover{
+  background-color:red;
+  cursor: pointer;
+}
+.form-heading{
+  margin: 0 auto;
+}
+
+.hero{
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-video{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/*audio/video*/
+@media (min-aspect-ratio:16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+
+}
+
+@media (max-aspect-ratio:16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+
+}
+audio{
+width: 70%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
